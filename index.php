@@ -105,10 +105,17 @@
 
     <div class="container wow animated fadeInDown">
       <h3>Sign up today to be notified when we launch!</h3>
-      <form class="form-inline">
+
+      <h4 class="return-message" style="display: none;">It worked!</h4>
+
+      <h4 class="return-message-error" style="display: none;">It seems like theres a problem, try again.</h4>
+
+      <form class="form-inline newsletter-field">
         <input type="email" id="email" name="email" placeholder="Enter your email..." class="input-lg">
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
+
+
     </div>
 
   </section>

@@ -549,6 +549,12 @@ header {
 	padding: 8px 8px 0px 17px;
 }
 
+#newsletter h4 {
+	color: #ffffff;
+	margin: 43px 0px -53px 0px;
+	font-size: 30px;
+}
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
 

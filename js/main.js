@@ -56,5 +56,25 @@ $(document).ready(function() {
   }
 
 
+  // mailchimp
+  $('.newsletter-field').submit(function() {
+      
+      $.ajax({
+          url: 'mailchimp.php',
+          data: $('.newsletter-field').serialize(),
+          success: function(data) {
+
+            if (data.status.response == '200') {
+              $('.newsletter-field').fadeOut();
+              $('.return-message').show();
+            } else {
+              $('.return-message-error').show();
+            };
+
+          }
+      });
+      return false;
+  });
+
 });
 

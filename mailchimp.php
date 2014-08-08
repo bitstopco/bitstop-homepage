@@ -1,6 +1,9 @@
 <?php
 	require("vendor/autoload.php");
 
+	header('Access-Control-Allow-Origin: *');
+	header('Content-type: application/json;');
+
 	$MailChimp = new \Drewm\MailChimp('e85ef6df956d5ab02ef9ed12cf18aa93-us8');
 
 	$result = $MailChimp->call('lists/subscribe', array(
@@ -15,31 +18,31 @@
 
 	if( $result === false ) {
 	  
-	  $respond['status'] = array(
-	   	'respond' => 500,
+	  $response['status'] = array(
+	   	'response' => 500,
 	   	'name' => 'error',
 	   	'error' => 'I cant even' 
 	  );
 
-	  echo json_encode($respond);
+	  echo json_encode($response);
 
 	} else if( isset($result->status) && $result->status == 'error' ) {
 	  
-	  $respond['status'] = array(
-	   	'respond' => 500,
+	  $response['status'] = array(
+	   	'response' => 500,
 	   	'name' => $result->name,
 	   	'error' => $result->error  
 	  );
 
-	  echo json_encode($respond);
+	  echo json_encode($response);
 
 	} else if(isset($result['euid'])) {
 
-		$respond['status'] = array(
-	   	'respond' => 200
+		$response['status'] = array(
+	   	'response' => 200
 	  );
 
-	  echo json_encode($respond);
+	  echo json_encode($response);
 
 	}
 
