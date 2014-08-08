@@ -32,7 +32,6 @@
               <ul class="social-links">
                 <a href="#"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
                 <a href="#"><li class="fa fa-facebook"></li></a><!-- Facebook Link -->
-                <a href="#"><li class="fa fa-youtube"></li></a><!-- YouTube Link -->
                 <a href="#"><li class="fa fa-instagram"></li></a><!-- Instagram Link -->
               </ul>
             </div><!-- /navbar-collapse -->
