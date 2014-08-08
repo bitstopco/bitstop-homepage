@@ -44,51 +44,46 @@
     <div class="container">
       <div class="intro-well wow animated bounceIn">
         <div class="col-md-12">
-          <h1>Creative & modern landing, designed with love for apps.</h1>
-          <h2>Design is not just what it looks like. Design is how it works.</h2>
+          <h1>Bitcoin Services Coming To South Florida</h1>
+          <h2>Fall 2014</h2>
         </div>
       </div>
     </div><!-- /container -->
   </section>
 
-  <!--////////// FEATURES SECTION ////////// -->
+  <!--////////// LATEST TRANSACTION SECTION ////////// -->
   <section id="features">
     <div class="container wow fadeIn animated">
       <h1>Latest Transactions</h1>
       <h2>See transactions happen live as they happen like swoofff  ect ect.</h2>
-      
     </div><!-- /container -->
+    
     <div class="container">
       <div class="row">
-        <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
-          <div class="iconbox">
-          <a href="#" class="icn-1">Purchase Now</a>
-          </div>
-            <p class="icntitle">1.Purchase</p>
-            <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
+        
+        show transactions here
 
-        </div><!-- /col-md-4 -->
-
-        <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.2s">
-        <div class="iconbox">
-      <a href="#" class="icn-2">Responsive</a>
-        </div>
-      <p class="icntitle">2.Install</p>
-            <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
-        </div><!-- /col-md-4 -->
-
-      <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.3s">
-        <div class="iconbox">
-      <a href="#" class="icn-3">App of Year</a>
-        </div>
-      <p class="icntitle">3.Enjoy</p>
-             <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
-        </div>
-      </div><!-- /col-md-4 -->
       </div><!-- /row -->
     </div><!-- /container -->
-
   </section>
+
+  <!--////////// WHATS BITCOIN SECTION ////////// -->
+  <section id="features" class="what-is-bitcoin">
+    <div class="container wow fadeIn animated">
+      <h1>Bitcoin is an innovative payment network <br> and a new kind of money.</h1>
+    </div><!-- /container -->
+    
+    <div class="container">
+      <div class="row">
+        
+        <div class="what-is-it">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/Gc2en3nHxA4?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+
   <!--////////// NEWSLETTER SECTION ////////// -->
   <section id="newsletter">
 
