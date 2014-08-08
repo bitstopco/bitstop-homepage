@@ -1,3 +1,7 @@
+<?php 
+  include('lib/functions.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +34,7 @@
 
             <div id="main-nav" class="navbar-collapse">          
               <ul class="social-links">
-                <li class="current-value">1 BTC = $600</li>
+                <li class="current-value">1 BTC = <?php echo BTCprice('1'); ?></li>
                 <a href="#"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
                 <a href="#"><li class="fa fa-facebook"></li></a><!-- Facebook Link -->
                 <a href="#"><li class="fa fa-instagram"></li></a><!-- Instagram Link -->
