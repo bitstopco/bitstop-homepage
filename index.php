@@ -1,6 +1,4 @@
-<?php 
-  require("vendor/autoload.php");
-  
+<?php
   include('lib/functions.php');
 ?>
 
