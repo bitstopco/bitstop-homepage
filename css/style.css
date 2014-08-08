@@ -76,10 +76,6 @@ header {
 	padding-top: 50px;
 }
 
-.navbar-brand img {
-	width: 203px;
-}
-
 .social-links {
 	float: right;
 }
@@ -506,13 +502,19 @@ header {
 }
 
 .navbar-brand img {
-	width: 257px;
-	margin: -24px 0px 0px 0px;
+	width: 300px;
+	margin: -12px 0px 0px 0px;
 }
 
 .what-is-it {
 	width: 560px;
 	margin: 40px auto;
+}
+
+.current-value {
+	color: #ffffff;
+	margin: -4px 37px 0px 0px;
+	font-size: 17px;
 }
 
 
