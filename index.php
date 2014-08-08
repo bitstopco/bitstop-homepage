@@ -123,5 +123,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/nivo-lightbox.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/livestamp.min.js"></script>
 </body>
 </html>
