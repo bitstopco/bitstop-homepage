@@ -548,3 +548,26 @@ header {
 	}
 
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+
+	a.navbar-brand {width: 263px;
+		padding: 0px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.navbar-brand img {
+		width: 263px;
+	}
+
+	ul.social-links {
+		margin: -5px 0px 0px 0px;
+		padding: 0px;
+	}
+
+	li.current-value {
+		margin: -4px 17px 0px 0px;
+	}
+
+
+}
