@@ -67,7 +67,7 @@
         <div class="col-sm-12">
 
           <div class="panel" style="border-bottom: 0px; border-left: 0px; border-right: 0px;">
-            <div class="panel-body">
+            <div class="panel-body transaction-container">
               <table class="table table-striped transactions">
                 <tbody>
                   
