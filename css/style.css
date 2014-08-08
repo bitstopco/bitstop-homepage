@@ -534,4 +534,17 @@ header {
 		height: 225px;
 	}
 
+	a.navbar-brand {width: 263px;
+		padding: 0px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.navbar-brand img {
+		width: 263px;
+	}
+
+	ul.social-links {
+		margin: 0px 12px 0px 0px;
+	}
+
 }
