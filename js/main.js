@@ -54,7 +54,7 @@ $(document).ready(function() {
 
     console.log(amount);
 
-    $(".transactions tbody").prepend('<tr><td class="t-hash"><a href="https://blockchain.info/tx/'+response.x.hash+'" target="_blank">'+response.x.hash+'</a></td><td class="t-time"><span data-livestamp="'+response.x.time+'"></span></td><td class="t-amount"><span class="label label-success">'+amount+' BTC</span></td></tr>');
+    $(".transactions tbody").prepend('<tr><td class="t-hash"><a href="https://blockchain.info/tx/'+response.x.hash+'" target="_blank">'+response.x.hash+'</a></td><td class="t-time"><span data-livestamp="'+response.x.time+'"></span></td><td class="t-amount"><span class="label label-danger">'+amount+' BTC</span></td></tr>');
   }
 
 
