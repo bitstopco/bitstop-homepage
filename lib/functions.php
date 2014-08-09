@@ -25,7 +25,7 @@
 
 		$price = "$".$results['subtotal']['amount'];
 
-		return $price;
+		echo $price;
 	}
 
 ?>
