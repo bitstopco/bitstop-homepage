@@ -21,7 +21,7 @@
 
     echo "You shall not pass";
 
-    echo $config['url'];
+    get('title');
   }
 
 ?>
