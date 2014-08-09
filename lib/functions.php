@@ -2,7 +2,7 @@
 
 	$config = array(
 		'title' => 'Bitstop',
-		'url' => 'http://198.199.109.22' 
+		'url' => 'http://bitstop.co' 
 	);
 
 	function BTCprice($amount)
