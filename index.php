@@ -13,6 +13,7 @@
 
   <meta property="og:title" content="<?php echo $config['title']; ?>"/>
   <meta property="og:url" content="<?php echo $config['url']; ?>"/>
+  <meta property="og:type" content="website"/>
   <meta property="og:description" content="Bitcoin Services Coming To South Florida - Fall 2014" />
   <meta property="og:image" content="<?php echo $config['url']; ?>/img/favicon.png" />
 
