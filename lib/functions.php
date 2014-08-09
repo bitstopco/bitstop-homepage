@@ -1,9 +1,21 @@
 <?php
 
-	$config = array(
-		'title' => 'Bitstop',
-		'url' => 'http://bitstop.co' 
-	);
+	function get($get)
+	{
+		switch ($get) {
+    	case "title":
+        $value = $_ENV['SITE_TITLE'];
+        break;
+    	case "url":
+        $value = $_ENV['SITE_URL'];
+        break;
+    	case "cake":
+        $value = "is a lie";
+        break;
+		}
+
+		echo $value;
+	}
 
 	function BTCprice($amount)
 	{
@@ -13,7 +25,7 @@
 
 		$price = "$".$results['subtotal']['amount'];
 
-		return $price;
+		echo $price;
 	}
 
 ?>
