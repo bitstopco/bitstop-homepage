@@ -60,9 +60,11 @@ $(document).ready(function() {
   $('.newsletter-field').submit(function() {
       
       $.ajax({
-          url: 'mailchimp.php',
+          url: '/process/mailchimp',
           data: $('.newsletter-field').serialize(),
           success: function(data) {
+
+            data = jQuery.parseJSON(data);
 
             if (data.status.response == '200') {
               $('.newsletter-field').fadeOut();
