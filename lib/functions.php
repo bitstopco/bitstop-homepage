@@ -2,7 +2,7 @@
 
 	$config = array(
 		'title' => 'Bitstop',
-		'url' => 'http://bitstop.herokuapp.com' 
+		'url' => 'http://198.199.109.22' 
 	);
 
 	function BTCprice($amount)
