@@ -8,13 +8,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bitstop</title>
+  <title><?php echo $config['title']; ?></title>
   <link href="css/style.css" rel="stylesheet">
 
-  <meta property="og:title" content="Bitstop"/>
-  <meta property="og:url" content="http://bitstop.herokuapp.com"/>
+  <meta property="og:title" content="<?php echo $config['title']; ?>"/>
+  <meta property="og:url" content="<?php echo $config['url']; ?>"/>
   <meta property="og:description" content="Bitcoin Services Coming To South Florida - Fall 2014" />
-  <meta property="og:image" content="http://bitstop.herokuapp.com/img/favicon.png" />
+  <meta property="og:image" content="<?php echo $config['url']; ?>/img/favicon.png" />
 
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 

@@ -1,5 +1,10 @@
 <?php
 
+	$config = array(
+		'title' => 'Bitstop',
+		'url' => 'http://bitstop.herokuapp.com' 
+	);
+
 	function BTCprice($amount)
 	{
 		$request = "https://coinbase.com/api/v1/prices/buy?qty=".$amount;
