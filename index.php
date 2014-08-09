@@ -11,6 +11,9 @@
   <title>Bitstop</title>
   <link href="css/style.css" rel="stylesheet">
 
+  <meta property="og:description" content="Bitcoin Services Coming To South Florida - Fall 2014" />
+  <meta property="og:image" content="http://bitstop.herokuapp.com/img/favicon.png" />
+
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
