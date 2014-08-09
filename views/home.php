@@ -11,7 +11,7 @@
   <meta property="og:url" content="<?php get('url'); ?>"/>
   <meta property="og:type" content="website"/>
   <meta property="og:description" content="Bitcoin Services Coming To South Florida - Fall 2014" />
-  <meta property="og:image" content="<?php get('url'); ?>/img/favicon.png" />
+  <meta property="og:image" content="<?php get('url'); ?>/assets/img/favicon.png" />
 
   <link rel="shortcut icon" type="image/png" href="<?php get('url'); ?>/assets/img/favicon.png">
 
@@ -23,6 +23,96 @@
   <![endif]-->
 </head>
 <body>
+
+  <div class="doc-loader"></div>
+
+  <!--/////////// HEADER SECTION //////////-->
+  <section id="intro">
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="container">
+
+            <a class="navbar-brand" href="index.php">
+              <img src="<?php get('url'); ?>/assets/img/logo.png">
+            </a>
+
+            <div id="main-nav" class="navbar-collapse">          
+              <ul class="social-links">
+                <li class="current-value">1 BTC = <?php echo BTCprice('1'); ?></li>
+                <a href="#"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
+                <a href="#"><li class="fa fa-facebook"></li></a><!-- Facebook Link -->
+                <a href="#"><li class="fa fa-instagram"></li></a><!-- Instagram Link -->
+              </ul>
+            </div><!-- /navbar-collapse -->
+          </div><!-- /container -->
+        </div>
+      </nav>
+    </header>
+    
+    <div class="container">
+      <div class="intro-well wow animated bounceIn">
+        <div class="col-md-12">
+          <h1>Bitcoin Services Coming To South Florida</h1>
+          <h2>Fall 2014</h2>
+        </div>
+      </div>
+    </div><!-- /container -->
+  </section>
+
+  <!--////////// LATEST TRANSACTION SECTION ////////// -->
+  <section id="features">
+    <div class="container wow fadeIn animated">
+      <h1>Latest Transactions</h1>
+      <h2>See transactions as they happen live.</h2>
+    </div><!-- /container -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <div class="panel" style="border-bottom: 0px; border-left: 0px; border-right: 0px;">
+            <div class="panel-body transaction-container">
+              <table class="table table-striped transactions">
+                <tbody>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+
+  <!--////////// WHATS BITCOIN SECTION ////////// -->
+  <section id="features" class="what-is-bitcoin">
+    <div class="container wow fadeIn animated">
+      <h1>Bitcoin is an innovative payment network <br> and a new kind of money.</h1>
+    </div><!-- /container -->
+    <div class="container">
+      <div class="row">
+        <div class="what-is-it">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/Gc2en3nHxA4?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+
+  <!--////////// NEWSLETTER SECTION ////////// -->
+  <section id="newsletter">
+    <div class="container wow animated fadeInDown">
+      <h3>Sign up today to be notified when we launch!</h3>
+      <h4 class="return-message" style="display: none;">It worked!</h4>
+      <h4 class="return-message-error" style="display: none;">It seems like theres a problem, try again.</h4>
+      <form class="form-inline newsletter-field">
+        <input type="email" id="email" name="email" placeholder="Enter your email..." class="input-lg">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
 
   <!--////////// FOOTER SECTION ////////// -->
   <footer>
