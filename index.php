@@ -15,7 +15,13 @@
   # lets go
   $app->run();
 
+  
   function home() {
+    include('lib/functions.php');
+
     echo "You shall not pass";
+
+    echo $config['url'];
   }
+
 ?>
