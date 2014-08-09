@@ -19,9 +19,7 @@
   function home() {
     include('lib/functions.php');
 
-    echo "You shall not pass";
-
-    get('title');
+    include('views/home.php');
   }
 
 ?>
