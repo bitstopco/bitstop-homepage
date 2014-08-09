@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>bitstop</title>
+  <title>Bitstop</title>
   <link href="css/style.css" rel="stylesheet">
 
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -61,7 +61,7 @@
   <section id="features">
     <div class="container wow fadeIn animated">
       <h1>Latest Transactions</h1>
-      <h2>See transactions happen live as they happen like swoofff  ect ect.</h2>
+      <h2>See transactions as they happen live.</h2>
     </div><!-- /container -->
     
     <div class="container">
