@@ -11,6 +11,8 @@
   <title>Bitstop</title>
   <link href="css/style.css" rel="stylesheet">
 
+  <meta property="og:title" content="Bitstop"/>
+  <meta property="og:url" content="http://bitstop.herokuapp.com"/>
   <meta property="og:description" content="Bitcoin Services Coming To South Florida - Fall 2014" />
   <meta property="og:image" content="http://bitstop.herokuapp.com/img/favicon.png" />
 
