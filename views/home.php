@@ -75,8 +75,12 @@
   <!--////////// LATEST TRANSACTION SECTION ////////// -->
   <section id="features">
     <div class="container wow fadeIn animated">
-      <h1>Latest Transactions</h1>
-      <h2>See transactions as they happen live.</h2>
+      <h1>Check out the latest transaction happening live</h1>
+      <h2>
+        Bitcoin is a living, breathing, peer to peer decentralized network which will never be taken down. <br> 
+        Transactions are happening right now all around the World. <br>
+        Watch them happen live.
+      </h2>
     </div><!-- /container -->
     
     <div class="container">
