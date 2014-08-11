@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   // socket connector to blockchain
 
-  var conn = new WebSocket('ws://ws.blockchain.info/inv');
+  var conn = new WebSocket('wss://ws.blockchain.info/inv');
   
   conn.onopen = function () {
     console.log('open');
