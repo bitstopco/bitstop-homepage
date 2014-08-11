@@ -101,9 +101,7 @@
 
         <div class="col-sm-12" style="margin-top: 34px;">
           <h2> 
-            We know Bitcoin sounds complicated. But we are here to show you that with a 
-            <br> 
-            little practice and time you can reap so many benefits.
+          	Bitcoin can seem a bit complex, but with a little education and some guidance <br> you too can benefit from this amazing new technology.
           </h2>
         </div> 
       </div><!-- /row -->
