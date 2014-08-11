@@ -75,11 +75,11 @@
   <!--////////// LATEST TRANSACTION SECTION ////////// -->
   <section id="features">
     <div class="container wow fadeIn animated">
-      <h1>Check out the latest transaction happening live</h1>
+      <h1>Bitcoin is a peer to peer decentralized money transfer network. <br> It's fast, secure, and accessible to everyone.</h1>
       <h2>
-        Bitcoin is a living, breathing, peer to peer decentralized network which will never be taken down. <br> 
-        Transactions are happening right now all around the World. <br>
-        Watch them happen live.
+        Transactions are happening every second all around the World.  
+        <br>
+        Watch them happen live
       </h2>
     </div><!-- /container -->
     
@@ -98,6 +98,14 @@
           </div>
 
         </div>
+
+        <div class="col-sm-12" style="margin-top: 34px;">
+          <h2> 
+            We know Bitcoin sounds complicated. But we are here to show you that with a 
+            <br> 
+            little practice and time you can reap so many benefits.
+          </h2>
+        </div> 
       </div><!-- /row -->
     </div><!-- /container -->
   </section>
@@ -105,7 +113,7 @@
   <!--////////// WHATS BITCOIN SECTION ////////// -->
   <section id="features" class="what-is-bitcoin">
     <div class="container wow fadeIn animated">
-      <h1>Bitcoin is an innovative payment network <br> and a new kind of money.</h1>
+      <h1>BitStop is here to help make it simple.</h1>
     </div><!-- /container -->
     <div class="container">
       <div class="row">
