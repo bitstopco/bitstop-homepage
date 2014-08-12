@@ -301,6 +301,8 @@ background-image: url('../img/i2.png');
 /* ========== NEWSLETTER ========== */
 
 #newsletter {
+	min-height: 386px;
+
 	width: 100%;
 	z-index: 100;
 	padding-top: 110px;
