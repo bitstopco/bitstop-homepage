@@ -109,9 +109,9 @@
   </section>
 
   <!--////////// WHATS BITCOIN SECTION ////////// -->
-  <section id="features" class="what-is-bitcoin">
+  <section id="features" class="what-is-bitcoin" style="padding-top: 0px; margin: -9px 0px 16px 0px;">
     <div class="container wow fadeIn animated">
-      <h1>BitStop is here to help make it simple.</h1>
+      <h1 style="font-size: 35px;">BitStop is here to help make it simple.</h1>
     </div><!-- /container -->
     <div class="container">
       <div class="row">
