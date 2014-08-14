@@ -138,6 +138,8 @@
       <form class="form-inline newsletter-field">
         <input type="email" id="email" name="email" placeholder="Enter your email..." class="input-lg">
         <button type="submit" class="btn btn-primary">Subscribe</button>
+
+        <p style="color: #ffffff; margin-top: 4px;">*We will never share, rent, or sell your email address to anyone, ever.</p>
       </form>
     </div>
   </section>
