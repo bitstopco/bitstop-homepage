@@ -137,7 +137,7 @@
 
   <!--////////// FOOTER SECTION ////////// -->
   <footer>
-    <p>© Copyright 2014 <?php get('title'); ?></p>
+    <p>© Copyright 2014 <?php get('title'); ?>&#0153;</p>
   </footer>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
