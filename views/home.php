@@ -90,7 +90,14 @@
           <div class="panel" style="border-bottom: 0px; border-left: 0px; border-right: 0px;">
             <div class="panel-body transaction-container">
               <table class="table table-striped transactions">
-                <tbody>
+                <thead>
+                <tr>
+                   <th style="padding-left: 18px; width: 60%;">Transaction</th>
+                   <th style="padding-left: 18px; width: 20%;">Time</th>
+                   <th style="padding-left: 18px; width: 20%;">Amount</th>
+                </tr>
+               </thead>
+               <tbody>
                   
                 </tbody>
               </table>
