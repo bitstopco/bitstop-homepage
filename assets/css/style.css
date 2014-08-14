@@ -607,3 +607,10 @@ header {
 
 
 }
+
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1920px) {
+ 	#intro {
+ 		height: 600px;
+ 	}
+}
