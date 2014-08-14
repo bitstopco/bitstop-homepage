@@ -609,29 +609,21 @@ header {
 }
 
 @media only screen and (min-width: 120.063em) { 
-	#intro {
-		display: none;
-	}
 
-	.doc-loader {
-		display: block;
-	}
 }
 
 /* (1920x1080) Full HD Display */
 @media screen and (min-width:1920px) {
 	#intro {
-		display: none;
+		height: 565px;
+		background-size: 100%;
+		background-position: center -148px;
+	}
+
+	#newsletter {
+		min-height: 419px;
+		background-position: center 100px;
+		text-shadow: 2px 2px 2px #000;
 	}
 }
-@media screen and (max-width: 1920px) {
- 	#intro {
- 		height: 600px;
- 	}
-}
 
-@media (min-height: 1080px) {
-  #intro {
-  	display: none;
-  }
-}
