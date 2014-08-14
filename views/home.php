@@ -137,6 +137,25 @@
 
   <!--////////// FOOTER SECTION ////////// -->
   <footer>
+
+    <ul class="social center-block" style="float:none;">
+      <li>
+        <a href="#" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li style="margin: 0px 130px;">
+        <a href="#" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+
     <p>© Copyright 2014 <?php get('title'); ?>&#0153;</p>
   </footer>
 
