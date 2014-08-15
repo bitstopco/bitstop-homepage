@@ -52,7 +52,7 @@
             <div id="main-nav" class="navbar-collapse">          
               <ul class="social-links">
                 <li class="current-value">1 BTC = <?php BTCprice('1'); ?></li>
-                <a href="#" target="_blank"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
+                <a href="https://twitter.com/bitstopofficial" target="_blank"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
                 <a href="https://www.facebook.com/Bitstopofficial" target="_blank"><li class="fa fa-facebook"></li></a><!-- Facebook Link -->
                 <a href="#" target="_blank"><li class="fa fa-instagram"></li></a><!-- Instagram Link -->
               </ul>
@@ -154,7 +154,7 @@
         </a>
       </li>
       <li style="margin: 0px 130px;">
-        <a href="#" target="_blank">
+        <a href="https://twitter.com/bitstopofficial" target="_blank">
           <i class="fa fa-twitter"></i>
         </a>
       </li>
