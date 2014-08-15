@@ -54,7 +54,7 @@
                 <li class="current-value">1 BTC = <?php BTCprice('1'); ?></li>
                 <a href="https://twitter.com/bitstopofficial" target="_blank"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
                 <a href="https://www.facebook.com/Bitstopofficial" target="_blank"><li class="fa fa-facebook"></li></a><!-- Facebook Link -->
-                <a href="#" target="_blank"><li class="fa fa-instagram"></li></a><!-- Instagram Link -->
+                <a href="https://tagboard.com/bitstopofficial" target="_blank"><li class="fa fa-instagram"></li></a><!-- Instagram Link -->
               </ul>
             </div><!-- /navbar-collapse -->
           </div><!-- /container -->
@@ -159,7 +159,7 @@
         </a>
       </li>
       <li>
-        <a href="#" target="_blank">
+        <a href="https://tagboard.com/bitstopofficial" target="_blank">
           <i class="fa fa-instagram"></i>
         </a>
       </li>
