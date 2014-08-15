@@ -52,9 +52,9 @@
             <div id="main-nav" class="navbar-collapse">          
               <ul class="social-links">
                 <li class="current-value">1 BTC = <?php BTCprice('1'); ?></li>
-                <a href="#"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
-                <a href="#"><li class="fa fa-facebook"></li></a><!-- Facebook Link -->
-                <a href="#"><li class="fa fa-instagram"></li></a><!-- Instagram Link -->
+                <a href="https://twitter.com/bitstopofficial" target="_blank"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
+                <a href="https://www.facebook.com/Bitstopofficial" target="_blank"><li class="fa fa-facebook"></li></a><!-- Facebook Link -->
+                <a href="https://tagboard.com/bitstopofficial" target="_blank"><li class="fa fa-instagram"></li></a><!-- Instagram Link -->
               </ul>
             </div><!-- /navbar-collapse -->
           </div><!-- /container -->
@@ -90,7 +90,14 @@
           <div class="panel" style="border-bottom: 0px; border-left: 0px; border-right: 0px;">
             <div class="panel-body transaction-container">
               <table class="table table-striped transactions">
-                <tbody>
+                <thead>
+                <tr>
+                   <th style="padding-left: 18px; width: 60%;">Transaction</th>
+                   <th style="padding-left: 18px; width: 20%;">Time</th>
+                   <th style="padding-left: 18px; width: 20%;">Amount</th>
+                </tr>
+               </thead>
+               <tbody>
                   
                 </tbody>
               </table>
@@ -111,7 +118,7 @@
   <!--////////// WHATS BITCOIN SECTION ////////// -->
   <section id="features" class="what-is-bitcoin" style="padding-top: 0px; margin: -9px 0px 16px 0px;">
     <div class="container wow fadeIn animated">
-      <h1 style="font-size: 35px;">BitStop is here to help make it simple.</h1>
+      <h1 style="font-size: 39px;">BitStop is here to help make it simple.</h1>
     </div><!-- /container -->
     <div class="container">
       <div class="row">
@@ -131,12 +138,33 @@
       <form class="form-inline newsletter-field">
         <input type="email" id="email" name="email" placeholder="Enter your email..." class="input-lg">
         <button type="submit" class="btn btn-primary">Subscribe</button>
+
+        <p style="color: #ffffff; margin-top: 4px;">*We will never share, rent, or sell your email address to anyone, ever.</p>
       </form>
     </div>
   </section>
 
   <!--////////// FOOTER SECTION ////////// -->
   <footer>
+
+    <ul class="social center-block" style="float:none;">
+      <li>
+        <a href="https://www.facebook.com/Bitstopofficial" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li style="margin: 0px 130px;">
+        <a href="https://twitter.com/bitstopofficial" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://tagboard.com/bitstopofficial" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+
     <p>© Copyright 2014 <?php get('title'); ?>&#0153;</p>
   </footer>
 
