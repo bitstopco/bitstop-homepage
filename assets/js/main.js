@@ -55,7 +55,7 @@ $(document).ready(function() {
     response.amount = amount / 100000000;
     amount = response.amount;
 
-    //console.log(amount.slice(0,4));
+    var btcAmount = $.number( amount, 4 );
 
     var responseAmount;
 
@@ -70,9 +70,8 @@ $(document).ready(function() {
     });
 
     var usdAmount = $.number( responseAmount.amount, 2 );
-    $(".transactions tbody").prepend('<tr><td class="t-hash"><a href="https://blockchain.info/tx/'+response.x.hash+'" target="_blank">'+hash+'...</a></td><td class="t-time"><span data-livestamp="'+response.x.time+'"></span></td><td class="t-amount"><span class="label label-danger">'+amount+' BTC</span> - <span class="label label-success">$'+usdAmount+' USD</span></td></tr>');
+    $(".transactions tbody").prepend('<tr><td class="t-hash"><a href="https://blockchain.info/tx/'+response.x.hash+'" target="_blank">'+hash+'...</a></td><td class="t-time"><span data-livestamp="'+response.x.time+'"></span></td><td class="t-amount"><span class="label label-danger">'+btcAmount+' BTC</span> - <span class="label label-success">$'+usdAmount+' USD</span></td></tr>');
   }
-
 
   // mailchimp
   $('.newsletter-field').submit(function() {
