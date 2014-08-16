@@ -16,23 +16,41 @@
 
     $app->get('/mailchimp', 'Process:mailchimp');
 
+    $app->get('/price', 'Process:price');
+
   });
 
   # lets go
   $app->run();
 
-  
-  function home() 
+
+  function home()
   {
     include('lib/functions.php');
 
     include('views/home.php');
   }
 
-  class Process 
+  class Process
   {
 
-    function mailchimp() 
+    function price()
+    {
+      $amount = $_GET['amount'];
+      $request = "https://coinbase.com/api/v1/prices/buy?qty=".$amount;
+      $response = file_get_contents($request);
+      $results = json_decode($response, TRUE);
+
+      $price = $results['subtotal']['amount'];
+
+      $response = array(
+        'amount' => $price
+      );
+
+      echo json_encode($response);
+    }
+
+    function mailchimp()
     {
       include('lib/functions.php');
 
@@ -52,21 +70,21 @@
                 ));
 
       if( $result === false ) {
-        
+
         $response['status'] = array(
           'response' => 500,
           'name' => 'error',
-          'error' => 'I cant even' 
+          'error' => 'I cant even'
         );
 
         echo json_encode($response);
 
       } else if( isset($result->status) && $result->status == 'error' ) {
-        
+
         $response['status'] = array(
           'response' => 500,
           'name' => $result->name,
-          'error' => $result->error  
+          'error' => $result->error
         );
 
         echo json_encode($response);

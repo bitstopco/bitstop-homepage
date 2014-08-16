@@ -49,7 +49,7 @@
               <img src="<?php get('url'); ?>/assets/img/logo.png">
             </a>
 
-            <div id="main-nav" class="navbar-collapse">          
+            <div id="main-nav" class="navbar-collapse">
               <ul class="social-links">
                 <li class="current-value">1 BTC = <?php BTCprice('1'); ?></li>
                 <a href="https://twitter.com/bitstopofficial" target="_blank"><li class="fa fa-twitter"></li></a><!-- Twitter Link -->
@@ -61,7 +61,7 @@
         </div>
       </nav>
     </header>
-    
+
     <div class="container">
       <div class="intro-well wow animated bounceIn">
         <div class="col-md-12">
@@ -77,12 +77,12 @@
     <div class="container wow fadeIn animated">
       <h1>Bitcoin is a peer to peer decentralized money transfer network. <br> It's fast, secure, and accessible to everyone.</h1>
       <h2>
-        Transactions are happening every second all around the World.  
+        Transactions are happening every second all around the World.
         <br>
         Watch them happen live
       </h2>
     </div><!-- /container -->
-    
+
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -92,13 +92,13 @@
               <table class="table table-striped transactions">
                 <thead>
                 <tr>
-                   <th style="padding-left: 18px; width: 60%;">Transaction</th>
+                   <th style="padding-left: 18px; width: 50%;">Transaction</th>
                    <th style="padding-left: 18px; width: 20%;">Time</th>
-                   <th style="padding-left: 18px; width: 20%;">Amount</th>
+                   <th style="padding-left: 18px; width: 30%;">Amount</th>
                 </tr>
                </thead>
                <tbody>
-                  
+
                 </tbody>
               </table>
             </div>
@@ -107,10 +107,10 @@
         </div>
 
         <div class="col-sm-12" style="margin-top: 34px;">
-          <h2> 
+          <h2>
           	Bitcoin can seem a bit complex, but with a little education and some guidance <br> you too can benefit from this amazing new technology.
           </h2>
-        </div> 
+        </div>
       </div><!-- /row -->
     </div><!-- /container -->
   </section>
@@ -177,6 +177,7 @@
   <script src="<?php get('url'); ?>/assets/js/main.js"></script>
   <script src="<?php get('url'); ?>/assets/js/moment.js"></script>
   <script src="<?php get('url'); ?>/assets/js/livestamp.min.js"></script>
+  <script src="<?php get('url'); ?>/assets/js/jquery.number.js"></script>
 
   <script type="text/javascript">
     var _gauges = _gauges || [];
