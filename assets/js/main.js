@@ -25,53 +25,38 @@ $(document).ready(function() {
 
   // socket connector to blockchain
 
-  var conn = new WebSocket('wss://ws.blockchain.info/inv');
+  socket = io.connect("wss://insight.bitpay.com/socket.io/1/");
 
-  conn.onopen = function () {
-    console.log('open');
-    conn.send('{"op":"unconfirmed_sub"}');
-  }
+  socket.on('connect', function() {
 
-  conn.onclose = function () {
-    console.log('close');
-  }
+    socket.nsp = "/";
+    socket.emit('subscribe', 'inv');
 
-  conn.onerror = function (error) {
-    console.log('websocket error: ' + error);
-  }
+    socket.on('tx', function(tx) {
+      var hash = tx.txid;
+      var hash = hash.slice(0,40);
 
-  conn.onmessage = function (message) {
-    var response = JSON.parse(message.data);
+      var btcAmount = $.number( tx.valueOut, 4 );
 
-    var hash = response.x.hash;
-    var hash = hash.slice(0,40);
+      var responseAmount;
 
-    var amount = 0;
+      $.ajax({
+        'async': false,
+        'type': "GET",
+        'global': false,
+        'url': "/process/price?amount="+btcAmount,
+        'success': function (data) {
+          responseAmount = JSON.parse(data);
+        }
+      });
 
-    for ( var i = 0; i < response.x.out.length; i++ ) {
-      amount += response.x.out[i].value;
-    }
+      var usdAmount = $.number( responseAmount.amount, 2 );
 
-    response.amount = amount / 100000000;
-    amount = response.amount;
-
-    var btcAmount = $.number( amount, 4 );
-
-    var responseAmount;
-
-    $.ajax({
-      'async': false,
-      'type': "GET",
-      'global': false,
-      'url': "/process/price?amount="+amount,
-      'success': function (data) {
-        responseAmount = JSON.parse(data);
-      }
+      $('.a-trans').slice(9).remove();
+      $(".transactions tbody").prepend('<tr class="a-trans"><td class="t-hash"><a href="https://blockchain.info/tx/'+tx.txid+'" target="_blank">'+hash+'...</a></td><td class="t-time"><span data-livestamp="'+new Date+'"></span></td><td class="t-amount"><span class="label label-danger">'+btcAmount+' BTC</span> - <span class="label label-success">$'+usdAmount+' USD</span></td></tr>');
     });
 
-    var usdAmount = $.number( responseAmount.amount, 2 );
-    $(".transactions tbody").prepend('<tr><td class="t-hash"><a href="https://blockchain.info/tx/'+response.x.hash+'" target="_blank">'+hash+'...</a></td><td class="t-time"><span data-livestamp="'+response.x.time+'"></span></td><td class="t-amount"><span class="label label-danger">'+btcAmount+' BTC</span> - <span class="label label-success">$'+usdAmount+' USD</span></td></tr>');
-  }
+  });
 
   // mailchimp
   $('.newsletter-field').submit(function() {

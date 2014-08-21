@@ -15,16 +15,26 @@
 
   <link rel="shortcut icon" type="image/png" href="<?php get('url'); ?>/assets/img/favicon.png">
 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://insight.bitpay.com/socket.io/socket.io.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="<?php get('url'); ?>/assets/js/bootstrap.js"></script>
+  <script src="<?php get('url'); ?>/assets/js/wow.min.js"></script>
+  <script src="<?php get('url'); ?>/assets/js/nivo-lightbox.min.js"></script>
+  <script src="<?php get('url'); ?>/assets/js/main.js"></script>
+  <script src="<?php get('url'); ?>/assets/js/moment.js"></script>
+  <script src="<?php get('url'); ?>/assets/js/livestamp.min.js"></script>
+  <script src="<?php get('url'); ?>/assets/js/jquery.number.js"></script>
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-</head>
-<body>
 
-<script>
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -34,6 +44,9 @@
   ga('send', 'pageview');
 
 </script>
+
+</head>
+<body>
 
   <div class="doc-loader"></div>
 
@@ -167,31 +180,6 @@
 
     <p>© Copyright 2014 <?php get('title'); ?>&#0153;</p>
   </footer>
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="<?php get('url'); ?>/assets/js/bootstrap.js"></script>
-  <script src="<?php get('url'); ?>/assets/js/wow.min.js"></script>
-  <script src="<?php get('url'); ?>/assets/js/nivo-lightbox.min.js"></script>
-  <script src="<?php get('url'); ?>/assets/js/main.js"></script>
-  <script src="<?php get('url'); ?>/assets/js/moment.js"></script>
-  <script src="<?php get('url'); ?>/assets/js/livestamp.min.js"></script>
-  <script src="<?php get('url'); ?>/assets/js/jquery.number.js"></script>
-
-  <script type="text/javascript">
-    var _gauges = _gauges || [];
-    (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '53e68b2f8bfdf7252100651c');
-      t.src = '//secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
 
 </body>
 </html>
