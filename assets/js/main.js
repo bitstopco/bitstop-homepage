@@ -38,22 +38,22 @@ $(document).ready(function() {
 
       var btcAmount = $.number( tx.valueOut, 4 );
 
-      var responseAmount;
+      //var responseAmount;
 
-      $.ajax({
-        'async': false,
-        'type': "GET",
-        'global': false,
-        'url': "/process/price?amount="+btcAmount,
-        'success': function (data) {
-          responseAmount = JSON.parse(data);
-        }
-      });
+      //$.ajax({
+      //  'async': false,
+      //  'type': "GET",
+      //  'global': false,
+      //  'url': "/process/price?amount="+btcAmount,
+      //  'success': function (data) {
+      //    responseAmount = JSON.parse(data);
+      //  }
+      //});
 
-      var usdAmount = $.number( responseAmount.amount, 2 );
+      //var usdAmount = $.number( responseAmount.amount, 2 );
 
       $('.a-trans').slice(9).remove();
-      $(".transactions tbody").prepend('<tr class="a-trans"><td class="t-hash"><a href="https://blockchain.info/tx/'+tx.txid+'" target="_blank">'+hash+'...</a></td><td class="t-time"><span data-livestamp="'+new Date+'"></span></td><td class="t-amount"><span class="label label-danger">'+btcAmount+' BTC</span> - <span class="label label-success">$'+usdAmount+' USD</span></td></tr>');
+      $(".transactions tbody").prepend('<tr class="a-trans"><td class="t-hash"><a href="https://blockchain.info/tx/'+tx.txid+'" target="_blank">'+hash+'...</a></td><td class="t-time"><span data-livestamp="'+new Date+'"></span></td><td class="t-amount"><span class="label label-danger">'+btcAmount+' BTC</span></td></tr>');
     });
 
   });
