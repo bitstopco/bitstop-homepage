@@ -536,6 +536,8 @@ header {
 	margin-bottom: -9px;
 }
 
+
+
 .transactions tbody tr td {
 	padding: 8px 8px 8px 17px;
 }
@@ -558,7 +560,7 @@ header {
 	font-size: 30px;
 }
 
-
+/* ========== iPhone 5 in portrait ========== */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
 
 	.what-is-it {
@@ -581,6 +583,22 @@ header {
 
 	ul.social-links {
 		margin: 0px 12px 0px 0px;
+	}
+
+	.transactions thead tr th:nth-child(2), .transactions thead tr th:last-child {
+		display: none;
+	}
+
+	.t-time {
+		display: none!important;
+	}
+
+	.transactions tbody tr td {
+		display: block;
+	}
+
+	.transaction-container {
+		padding: 15px 15px 15px 0px;
 	}
 
 }
