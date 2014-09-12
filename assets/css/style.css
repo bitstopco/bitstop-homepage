@@ -602,7 +602,7 @@ header {
 	}
 
 	#newsletter {
-		background-attachment: none!important;
+		background-attachment: initial!important;
 	}
 
 }
