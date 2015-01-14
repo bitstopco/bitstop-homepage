@@ -10,7 +10,7 @@
   <meta property="og:title" content="<?php get('title'); ?>"/>
   <meta property="og:url" content="<?php get('url'); ?>"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:description" content="Bitcoin Services Coming To South Florida - Fall 2014" />
+  <meta property="og:description" content="Bitcoin Services Coming To South Florida" />
   <meta property="og:image" content="<?php get('url'); ?>/assets/img/favicon.png" />
 
   <link rel="shortcut icon" type="image/png" href="<?php get('url'); ?>/assets/img/favicon.png">
@@ -79,7 +79,6 @@
       <div class="intro-well wow animated bounceIn">
         <div class="col-md-12">
           <h1>Bitcoin Services Coming To South Florida</h1>
-          <h2>Fall 2014</h2>
         </div>
       </div>
     </div><!-- /container -->
