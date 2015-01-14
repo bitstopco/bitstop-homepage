@@ -177,7 +177,7 @@
       </li>
     </ul>
 
-    <p>© Copyright 2014 <?php get('title'); ?>&#0153;</p>
+    <p>© Copyright 2015 <?php get('title'); ?>&#0153;</p>
   </footer>
 
 </body>
